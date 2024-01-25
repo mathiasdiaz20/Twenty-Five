@@ -1,0 +1,327 @@
+@media screen and (max-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+  }
+
+  @font-face {
+    font-family: "fuente";
+    src: url('LoveYaLikeASister-Regular.ttf');
+  }
+
+  @font-face {
+    font-family: "fuentedos";
+    src: url('Autography.otf');
+  }
+
+  @font-face {
+    font-family: "fuentenav";
+    src: url('Valentine\ Cute.ttf');
+  }
+
+  #inicio {
+    width: 100vw;
+    height: 160vh;
+  }
+
+  nav {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "fuentenav";
+    font-size: 14px;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .navp1 {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1vh;
+  }
+
+  .img {
+    max-width: 100%;
+    height: auto;
+    align-items: center;
+  }
+
+  .navp2 {
+    width: 100%;
+    height: 20%;
+  }
+
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+
+  li {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    transition: background-color 0.3s;
+  }
+
+  a:hover {
+    background-color: #555;
+    color: white;
+  }
+
+  #video-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  #videowalls {
+    width: 80%;
+    height: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 8vw;
+    border: 5px solid #f17fb4a9;
+    border-radius: 10px;
+    margin-top: 110vh;
+  }
+
+  .carta {
+    display: flex;
+    width: 100%;
+    height: 90%;
+    text-align: justify;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tarjetainicio {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 60vw;
+    height: 70vh;
+    padding: 5px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s, left 0.2s;
+    margin: 15px;
+    position: relative;
+  }
+
+  h3 {
+    font-family: fuentedos;
+    font-size: 24px;
+  }
+
+  p {
+    font-family: fuente;
+    font-size: 18px;
+  }
+
+  #casita {
+    width: 100vw;
+    height: 330vh;
+  }
+
+  .tarjetas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    flex-direction: column;
+  }
+
+  .tarjeta {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 80vw;
+    height: 72vh;
+    padding: 5px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s, left 0.2s;
+    margin: 15px;
+    position: relative;
+    margin-top: 23vh;
+  }
+
+  .tarjeta img {
+    width: 70vw;
+    height: 50vh;
+    border-radius: 2px;
+    object-fit: cover;
+  }
+
+  .tarjeta h4 {
+    font-size: 20px;
+  }
+
+  .tarjeta p {
+    font-size: 16px;
+    color: #555;
+  }
+
+  .tarjeta p.fecha {
+    display: block;
+  }
+
+  .tarjeta p.nuevo-texto {
+    display: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+  }
+
+  .tarjeta:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+
+  .tarjeta:hover img,
+  .tarjeta:hover h4,
+  .tarjeta:hover p.fecha {
+    display: none;
+  }
+
+  .tarjeta:hover p.nuevo-texto {
+    display: block;
+  }
+
+  .tarjeta:hover h4 {
+    color: #ff6347;
+  }
+
+  .tarjeta:hover p {
+    font-weight: bold;
+  }
+
+  #nosotros {
+    width: 100%;
+    height: 140vh;
+    font-family: fuentenav;
+    text-align: center;
+  }
+
+  .divus {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    margin-top: 30vh;
+  }
+
+
+
+  .botones {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .botoness {
+    background-color: #ff69b4;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: fuente;
+    border: none;
+    border-radius: 5px;
+    margin: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .tarjetaus {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 80%;
+    height: 45vh;
+    padding: 5px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s, left 0.2s;
+    margin: 15px;
+    position: relative;
+    margin-top: 30vh;
+  }
+
+  #videowallsus {
+    width: 90%;
+    height: 150%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    border: 5px solid #f17fb4a9;
+    border-radius: 10px;
+    margin-left: 2.75vw;
+  }
+
+  #broma {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+  }
+
+  .bromadiv {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20vh;
+  }
+
+  #bromis {
+    width: 50%;
+    height: 30%;
+    object-fit: fill;
+    top: 0;
+    left: 0;
+    border: 5px solid #f17fb4a9;
+    border-radius: 10px;
+  }
+
+  .titlebromis {
+    font-family: fuentenav;
+    margin-top: 10vh;
+  }
+
+
+
+}
